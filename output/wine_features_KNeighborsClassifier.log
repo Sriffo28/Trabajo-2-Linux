@@ -1,0 +1,7 @@
+2025-01-11 19:59:06,743 - INFO - Task: evaluate
+2025-01-11 19:59:06,743 - INFO - Training on train, Test on test, feature set ['features'] ...
+2025-01-11 19:59:06,757 - INFO - Featurizing and training new KNeighborsClassifier model
+2025-01-11 19:59:06,771 - INFO - Hyperparameters: algorithm: auto, leaf_size: 30, metric: minkowski, metric_params: None, n_jobs: None, n_neighbors: 5, p: 2, weights: uniform
+2025-01-11 19:59:06,771 - INFO - Evaluating predictions
+2025-01-11 19:59:06,776 - WARNING - /usr/local/lib/python3.9/dist-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning:Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+2025-01-11 19:59:06,776 - WARNING - /usr/local/lib/python3.9/dist-packages/sklearn/metrics/_classification.py:1248: UndefinedMetricWarning:Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.

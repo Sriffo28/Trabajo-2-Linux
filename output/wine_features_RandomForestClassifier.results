@@ -1,0 +1,42 @@
+Experiment Name: wine
+SKLL Version: 2.5.0
+Training Set: train
+Training Set Size: 94
+Test Set: test
+Test Set Size: 24
+Shuffle: True
+Feature Set: ["features"]
+Learner: RandomForestClassifier
+Task: evaluate
+Feature Scaling: both
+Grid Search: False
+Scikit-learn Version: 0.24.2
+Start Timestamp: 11 Jan 2025 19:59:06.822533
+End Timestamp: 11 Jan 2025 19:59:07.481605
+Total Time: 0:00:00.659072
+
+
+Fold: 
+Model Parameters: {"bootstrap": true, "ccp_alpha": 0.0, "class_weight": null, "criterion": "gini", "max_depth": null, "max_features": "auto", "max_leaf_nodes": null, "max_samples": null, "min_impurity_decrease": 0.0, "min_impurity_split": null, "min_samples_leaf": 1, "min_samples_split": 2, "min_weight_fraction_leaf": 0.0, "n_estimators": 500, "n_jobs": null, "oob_score": false, "random_state": 123456789, "verbose": 0, "warm_start": false}
+Grid Objective Score (Train) = 0.0
++----+-----+------+-----+-----+-----+-----+-----+-------------+----------+-------------+
+|    |   1 |    2 |   3 |   4 |   5 |   6 |   7 |   Precision |   Recall |   F-measure |
++====+=====+======+=====+=====+=====+=====+=====+=============+==========+=============+
+|  1 | [5] |    0 |   0 |   0 |   0 |   0 |   0 |       1.000 |    1.000 |       1.000 |
++----+-----+------+-----+-----+-----+-----+-----+-------------+----------+-------------+
+|  2 |   0 | [11] |   1 |   0 |   0 |   0 |   0 |       1.000 |    0.917 |       0.957 |
++----+-----+------+-----+-----+-----+-----+-----+-------------+----------+-------------+
+|  3 |   0 |    0 | [4] |   0 |   0 |   0 |   0 |       0.800 |    1.000 |       0.889 |
++----+-----+------+-----+-----+-----+-----+-----+-------------+----------+-------------+
+|  4 |   0 |    0 |   0 | [0] |   0 |   0 |   0 |       0.000 |    0.000 |       0.000 |
++----+-----+------+-----+-----+-----+-----+-----+-------------+----------+-------------+
+|  5 |   0 |    0 |   0 |   0 | [0] |   0 |   0 |       0.000 |    0.000 |       0.000 |
++----+-----+------+-----+-----+-----+-----+-----+-------------+----------+-------------+
+|  6 |   0 |    0 |   0 |   0 |   0 | [2] |   0 |       1.000 |    1.000 |       1.000 |
++----+-----+------+-----+-----+-----+-----+-----+-------------+----------+-------------+
+|  7 |   0 |    0 |   0 |   0 |   0 |   0 | [1] |       1.000 |    1.000 |       1.000 |
++----+-----+------+-----+-----+-----+-----+-----+-------------+----------+-------------+
+(row = reference; column = predicted)
+Accuracy = 0.9583333333333334
+Objective Function Score (Test) = 
+
