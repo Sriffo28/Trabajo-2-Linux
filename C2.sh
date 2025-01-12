@@ -9,7 +9,7 @@ awk -F',' '{print $1}' mcdonalds_menu.csv | sort | uniq > categories.txt
 
 # Paso 4: Extraer gramos columna "Serving Size" y eliminar aquellos solo en Oz
 < mcdonalds_menu.csv csvcut -c "Serving Size" | nl -v 0 -w 2| grep 'g' | cut -d '(' -f 2 | tr 'g)' ' ' | header -d > values.txt
-< mcdonalds_menu.csv csvcut -c "Serving Size" | nl -v 0 | awk '{print $1}' | header -d > index.txt
+< mcdonalds_menu.csv csvcut -c "Serving Size" | nl -v 0 | grep 'g' | awk '{print $1}' | header -d > index.txt
 
 # Paso 5: Codigo R para sanitizar base de datos
 ./script1.R
@@ -44,10 +44,12 @@ vw \
 --quiet
 bat predictions | trim
 
-paste -d, predictions <(cut -d '|' -f 1 wine-test.vw) |
-tee results.csv |
-awk -F, '{E+=$1==$2} END {print "Bien Clasificados: " E/NR}' |
-cowsay
+# Error al ejecutar script
+# no pasa nada si se corre en terminal
+#paste -d, predictions <(cut -d '|' -f 1 wine-test.vw) |
+#tee results.csv |
+#awk -F, '{E+=$1==$2} END {print "Bien Clasificados: " E/NR}' |
+#cowsay
 
 # Paso 7: Clasificacion con SciKit-Learn
 cat mcdonalds_menu_2.csv |
