@@ -25,3 +25,5 @@ neuralnet | 0.7306
 
 ## Conclusion
 El metodo que mejor resultados da es el de svm en R, con un 99% de buena clasificacion.
+
+Comentar que el codigo genera problemas al ejercutarse completo, pero no hay problemas si corre linea por linea.
